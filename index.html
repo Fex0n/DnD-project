@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Hub - Всё о Dungeons & Dragons</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>D&D Hub</h1>
+                    <p>Ваш гид по миру Dungeons & Dragons</p>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#newbies">Для новичков</a></li>
+                        <li><a href="#resources">Ресурсы</a></li>
+                        <li><a href="#community">Сообщество</a></li>
+                    </ul>
+                </nav>
+                <div class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главная страница -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Добро пожаловать в мир Dungeons & Dragons!</h2>
+                    <p>D&D - это настольная ролевая игра, где вы создаёте уникальных персонажей и отправляетесь в эпические приключения в фэнтезийном мире.</p>
+                    <div class="cta-buttons">
+                        <a href="#newbies" class="btn-primary">Начать играть</a>
+                        <a href="#community" class="btn-secondary">Присоединиться</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="img/dnd-hero.jpg" alt="Группа играет в D&D">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Быстрые разделы -->
+    <section class="quick-links">
+        <div class="container">
+            <h2>Быстрый доступ</h2>
+            <div class="links-grid">
+                <a href="#basics" class="link-card">
+                    <img src="img/dice-icon.png" alt="Основы">
+                    <h3>Основы D&D</h3>
+                    <p>Узнайте, как играть в D&D</p>
+                </a>
+                <a href="#character" class="link-card">
+                    <img src="img/character-icon.png" alt="Персонаж">
+                    <h3>Создание персонажа</h3>
+                    <p>Пошаговое руководство</p>
+                </a>
+                <a href="#find-group" class="link-card">
+                    <img src="img/group-icon.png" alt="Группа">
+                    <h3>Найти группу</h3>
+                    <p>Где и как играть</p>
+                </a>
+                <a href="#resources" class="link-card">
+                    <img src="img/book-icon.png" alt="Ресурсы">
+                    <h3>Ресурсы</h3>
+                    <p>Что купить для игры</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел для новичков -->
+    <section id="newbies" class="newbies-section">
+        <div class="container">
+            <h2>Для новичков</h2>
+            
+            <!-- Основы D&D -->
+            <article id="basics" class="article-card">
+                <div class="article-content">
+                    <h3>Основы D&D</h3>
+                    <p>Dungeons & Dragons (D&D) - это настольная ролевая игра, где игроки создают персонажей и отправляются в приключения под руководством Мастера Подземелий (Dungeon Master, DM).</p>
+                    <p>Игра сочетает в себе элементы сторителлинга, стратегии и случайности (благодаря броскам кубиков).</p>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-btn">Как проходит игра? <span class="arrow">▼</span></button>
+                            <div class="accordion-content">
+                                <p>Игроки описывают действия своих персонажей, а DM рассказывает, что происходит в ответ. Для определения успеха действий используются броски кубиков.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-btn">Какие кубики нужны? <span class="arrow">▼</span></button>
+                            <div class="accordion-content">
+                                <p>В D&D используются 7 типов кубиков: d4, d6, d8, d10, d12, d20 и d100. Самый важный - d20, он определяет успех большинства действий.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-image">
+                    <img src="img/dnd-basics.jpg" alt="Основы D&D">
+                </div>
+            </article>
+
+            <!-- Создание персонажа -->
+            <article id="character" class="article-card reverse">
+                <div class="article-content">
+                    <h3>Как создать персонажа</h3>
+                    <ol class="step-list">
+                        <li><strong>Выберите расу:</strong> Человек, эльф, дварф и др.</li>
+                        <li><strong>Выберите класс:</strong> Воин, маг, жрец, плут и др.</li>
+                        <li><strong>Определите характеристики:</strong> Сила, Ловкость, Телосложение, Интеллект, Мудрость, Харизма.</li>
+                        <li><strong>Выберите предысторию:</strong> Кем был ваш персонаж до приключений.</li>
+                        <li><strong>Выберите снаряжение:</strong> Оружие, доспехи и полезные предметы.</li>
+                    </ol>
+                    <a href="#" class="btn-primary">Подробное руководство</a>
+                </div>
+                <div class="article-image">
+                    <img src="img/character-creation.jpg" alt="Создание персонажа">
+                </div>
+            </article>
+
+            <!-- Поиск группы -->
+            <article id="find-group" class="article-card">
+                <div class="article-content">
+                    <h3>Как найти группу для игры</h3>
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="online">Онлайн</button>
+                        <button class="tab-btn" data-tab="offline">Офлайн</button>
+                        
+                        <div id="online" class="tab-content active">
+                            <ul>
+                                <li><strong>Roll20:</strong> Популярная платформа для онлайн-игры</li>
+                                <li><strong>Discord:</strong> Много серверов по D&D</li>
+                                <li><strong>Форумы:</strong> D&D Beyond, RPGate</li>
+                            </ul>
+                        </div>
+                        
+                        <div id="offline" class="tab-content">
+                            <ul>
+                                <li><strong>Клубы настольных игр:</strong> Проверьте местные клубы</li>
+                                <li><strong>Магазины комиксов:</strong> Часто организуют игры</li>
+                                <li><strong>Вузы и библиотеки:</strong> Иногда проводят игровые вечера</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-image">
+                    <img src="img/dnd-group.jpg" alt="Группа D&D">
+                </div>
+            </article>
+
+            <!-- FAQ -->
+            <article id="faq" class="faq">
+                <h3>Частые вопросы новичков</h3>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Можно ли играть без Мастера? <span class="arrow">▼</span></button>
+                        <div class="accordion-content">
+                            <p>Да, существуют готовые сценарии для самостоятельной игры, но классический вариант предполагает наличие DM.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Сколько стоит начать играть? <span class="arrow">▼</span></button>
+                        <div class="accordion-content">
+                            <p>Минимально - купить набор кубиков (от 500 руб). Базовые правила доступны бесплатно. Полные книги - от 3000 руб.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Сколько длится одна игра? <span class="arrow">▼</span></button>
+                        <div class="accordion-content">
+                            <p>Обычно 3-4 часа, но может быть как однократной сессией, так и длительной кампанией на месяцы.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Ресурсы -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2>Что купить для игры</h2>
+            <div class="resource-cards">
+                <div class="resource-card">
+                    <img src="img/players-handbook.jpg" alt="Книга игрока">
+                    <h3>Книга игрока</h3>
+                    <p>Основные правила, классы, расы</p>
+                    <span class="price">~3000 руб</span>
+                </div>
+                <div class="resource-card">
+                    <img src="img/dice-set.jpg" alt="Набор кубиков">
+                    <h3>Набор кубиков</h3>
+                    <p>7 полиэдрических кубиков</p>
+                    <span class="price">~500-1500 руб</span>
+                </div>
+                <div class="resource-card">
+                    <img src="img/dm-screen.jpg" alt="Экран мастера">
+                    <h3>Экран мастера</h3>
+                    <p>Помощник для DM</p>
+                    <span class="price">~1500 руб</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Сообщество -->
+    <section id="community" class="community">
+        <div class="container">
+            <div class="community-content">
+                <h2>Присоединяйтесь к нашему сообществу</h2>
+                <p>Общайтесь с другими игроками, находите группы для игры и делитесь своими историями!</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit" class="btn-primary">Подписаться</button>
+                </form>
+                <div class="social-links">
+                    <a href="#"><img src="img/discord-icon.png" alt="Discord"></a>
+                    <a href="#"><img src="img/vk-icon.png" alt="VK"></a>
+                    <a href="#"><img src="img/telegram-icon.png" alt="Telegram"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2023 D&D Hub. Все права защищены.</p>
+            <p>Dungeons & Dragons является товарным знаком Wizards of the Coast.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

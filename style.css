@@ -1,0 +1,536 @@
+/* Общие стили */
+:root {
+    --primary: #8B4513;
+    --secondary: #5E2C04;
+    --accent: #D2691E;
+    --light: #F5DEB3;
+    --dark: #2C1E10;
+    --text: #333;
+    --bg: #FFF8E1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text);
+    background-color: var(--bg);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'MedievalSharp', cursive;
+    color: var(--secondary);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary);
+    padding: 10px 20px;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Шапка */
+.header {
+    background-color: var(--dark);
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: var(--light);
+    font-size: 28px;
+}
+
+.logo p {
+    color: var(--accent);
+    font-size: 14px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: var(--accent);
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+/* Герой */
+.hero {
+    padding: 60px 0;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/dnd-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Быстрые ссылки */
+.quick-links {
+    padding: 60px 0;
+    background-color: var(--light);
+}
+
+.quick-links h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.link-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.link-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.link-card h3 {
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+/* Раздел для новичков */
+.newbies-section {
+    padding: 60px 0;
+}
+
+.newbies-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.article-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.article-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.article-content {
+    flex: 1;
+}
+
+.article-image {
+    flex: 1;
+}
+
+.article-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.article-content h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--secondary);
+}
+
+.step-list {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.step-list li {
+    margin-bottom: 10px;
+}
+
+/* Аккордеон */
+.accordion {
+    margin: 20px 0;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-btn {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background-color: var(--light);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-btn:hover {
+    background-color: #e0d0b8;
+}
+
+.accordion-content {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-content p {
+    padding: 15px 0;
+}
+
+.arrow {
+    transition: transform 0.3s;
+}
+
+.accordion-btn.active .arrow {
+    transform: rotate(180deg);
+}
+
+/* Табы */
+.tabs {
+    margin: 20px 0;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    background-color: var(--light);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.tab-btn.active {
+    background-color: var(--primary);
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Ресурсы */
+.resources {
+    padding: 60px 0;
+    background-color: var(--light);
+}
+
+.resources h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.resource-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.resource-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+}
+
+.resource-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.resource-card h3 {
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.price {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+/* Сообщество */
+.community {
+    padding: 80px 0;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/dnd-group-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.community h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.community p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.subscribe-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto 30px;
+}
+
+.subscribe-form input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.subscribe-form button {
+    border-radius: 0 5px 5px 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+/* Подвал */
+.footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .hero-content {
+        flex-direction: column;
+    }
+    
+    .article-card, .article-card.reverse {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--dark);
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .nav-list.active {
+        display: flex;
+    }
+    
+    .nav-list li {
+        margin: 10px 0;
+    }
+    
+    .burger-menu {
+        display: flex;
+    }
+    
+    .burger-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .burger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .burger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-text h2 {
+        font-size: 28px;
+    }
+    
+    .subscribe-form {
+        flex-direction: column;
+    }
+    
+    .subscribe-form input {
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .subscribe-form button {
+        border-radius: 5px;
+    }
+}
