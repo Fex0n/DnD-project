@@ -88,12 +88,12 @@ h1, h2, h3, h4 {
 
 .logo h1 {
     color: var(--light);
-    font-size: 28px;
+    font-size: 30px;
 }
 
 .logo p {
     color: var(--accent);
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .nav-list {
